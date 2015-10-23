@@ -1,0 +1,19 @@
+body{
+	font-size:1em;
+	color:#555;
+	font-family:Arial, Helvetica, sans-serif;
+	overflow:none;
+	background-color:rgba(16,16,16,0.9)
+}
+
+.header{
+  font-size:38px;
+  text-align:center;
+}
+
+img {
+	position:inline;
+	background-color: rgba(64,64,64,1)
+	padding:10px 0px;
+	margin:10px 0px;
+}

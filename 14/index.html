@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Felicity 2014</title>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <!-- Facebook Meta Tags -->
+    <meta content="Felicity 2014" property="og:title">
+    <meta content="university" property="og:type">
+    <meta content="http://felicity.iiit.ac.in" property="og:url">
+    <meta content="http://felicity.iiit.ac.in/12/static/fbbanner.jpg" property=
+    "og:image">
+    <meta content=
+    "Felicity 2014 : IIIT-H&#039;s Annual Cultural And Technical Festival"
+    property="og:site_name">
+    <meta content="605456227" property="fb:admins">
+    <meta content="Felicity 2k14" name="title">
+    <meta content=
+    "Felicity is a Annual Cult cum Tech fest at IIIT Hyderabad.It is the biggest fest in south india ,comprising the participation of more than 10 thousand students from 50 colleges all over india"
+    name="description"><!-- End Facebook Meta Tags -->
+    <!-- Favicon -->
+    <link href="static/favicon.ico" rel="shortcut icon" type="image/ico">
+    <!-- Other Css -->
+    <link href="static/css/font.css" rel="stylesheet" type="text/css">
+    <link href="static/css/demo.css" rel="stylesheet" type="text/css">
+    <link href="static/css/stylebg.css" rel="stylesheet" type="text/css">
+    <link href="static/css/demo_bmenu.css" rel="stylesheet" type="text/css">
+    <link href="static/css/style_bmenu.css" rel="stylesheet" type="text/css">
+    <!-- Jquery -->
+    <script src="static/js/jquery.min.js" type="text/javascript">
+    </script><!-- Modernizr -->
+    <script src="static/js/modernizr.custom.86080.js" type="text/javascript">
+    </script><!-- JPlayer -->
+
+    <script src="static/jplayer/jquery.jplayer.min.js" type="text/javascript">
+    </script>
+    <script src="static/jplayer/jquery.transform.js" type="text/javascript">
+    </script>
+    <script src="static/jplayer/jquery.grab.js" type="text/javascript">
+    </script>
+    <script src="static/jplayer/mod.csstransforms.min.js" type=
+    "text/javascript">
+    </script>
+    <script src="static/jplayer/circle.player.js" type="text/javascript">
+    </script>
+    <link href="static/jplayer/circle.skin/circle.player.css" rel="stylesheet">
+    <!-- End JPlayer -->
+    <!-- News Ticker -->
+
+    <script src="static/ticker/jquery.ticker.js" type="text/javascript">
+    </script>
+    <link href="static/ticker/ticker-style.css" rel="stylesheet" type=
+    "text/css"><!-- End News Ticker -->
+    <!-- FancyBox -->
+
+    <script src="static/fancybox/source/jquery.fancybox.pack.js" type=
+    "text/javascript">
+    </script>
+    <script src="static/fancybox/lib/jquery.mousewheel-3.0.6.pack.js" type=
+    "text/javascript">
+    </script>
+    <link href="static/fancybox/source/jquery.fancybox.css" media="screen" rel=
+    "stylesheet" type="text/css"><!-- End FancyBox -->
+    <!-- JavaScript -->
+
+    <script src="site.js" type="text/javascript">
+    </script>
+</head>
+
+<body style="overflow:hidden">
+    <!-- News Ticker -->
+    <!--<div style="position:absolute;width:100%;z-index:10"><ul id="js-news" class="js-hidden"></ul></div>-->
+    <!-- Felicity Banner -->
+
+    <div style="position:absolute;padding-top:40px;padding-left:5px"><img src=
+    "static/full_logo1.png">
+    </div>
+    <!-- Background Image Slideshow -->
+
+
+    <div id="bgimg" style="position:absolute;z-index:-5;">
+        <ul class="cb-slideshow">
+            <li>
+                <span>Image 01</span>
+
+                <div>
+                </div>
+            </li>
+
+
+            <li>
+                <span>Image 02</span>
+
+                <div>
+                </div>
+            </li>
+
+
+            <li>
+                <span>Image 03</span>
+
+                <div>
+                </div>
+            </li>
+
+
+            <li>
+                <span>Image 04</span>
+
+                <div>
+                </div>
+            </li>
+
+
+            <li>
+                <span>Image 05</span>
+
+                <div>
+                </div>
+            </li>
+
+
+            <li>
+                <span>Image 06</span>
+
+                <div>
+                </div>
+            </li>
+
+
+            <li>
+                <span>Image 07</span>
+
+                <div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- End Background Image Slideshow -->
+    <script src="./binary.js">
+    </script> 
+    <script>
+    // Connect to Binary.js server
+    console.log("STARTING DEBUG LOG");
+    //var client = new BinaryClient('ws://felicity.iiit.ac.in/stream');
+    var client = new BinaryClient('ws://54.201.62.76');
+
+    // var client = new BinaryClient('ws://ecoh.iiit.ac.in');
+    //  Received new stream from server!
+    client.on('error', function(e){
+    console.log("Handled error");
+    var client = new BinaryClient('ws://ecoh.iiit.ac.in:9000');
+    client.on('stream', function(stream, meta){    
+            // Buffer for parts
+            var parts = [];
+            // Got new data
+            stream.on('data', function(data){
+                console.log(data);
+                parts.push(data);
+                });
+           stream.on('end', function(){
+               // Display new data in browser!
+               var vid = document.getElementById("video_background");
+               vid.src = (window.URL || window.webkitURL).createObjectURL(new Blob(parts));
+
+           //  vid.controls = "controls"; to show controls if you want 
+
+               /** Note :
+                   document.body.appendChild(vid); will append the video to the bottom of body
+                   In most cases if you have already defined a div with an id and want to put 
+                   video in it do :
+                   var theDiv = document.getElementById("Id_of_div_element");
+                   theDiv.append(vid);
+               *****/
+               // document.body.appendChild(vid);
+               });
+           });
+    });
+    client.on('stream', function(stream, meta){    
+          // Buffer for parts
+          var parts = [];
+          // Got new data
+          stream.on('data', function(data){
+              console.log(data);
+              parts.push(data);
+              });
+         stream.on('end', function(){
+             // Display new data in browser!
+             var vid = document.getElementById("video_background");
+             vid.src = (window.URL || window.webkitURL).createObjectURL(new Blob(parts));
+
+         //  vid.controls = "controls"; to show controls if you want 
+
+             /** Note :
+                 document.body.appendChild(vid); will append the video to the bottom of body
+                 In most cases if you have already defined a div with an id and want to put 
+                 video in it do :
+                 var theDiv = document.getElementById("Id_of_div_element");
+                 theDiv.append(vid);
+             *****/
+             // document.body.appendChild(vid);
+             });
+         });
+
+    </script> <!-- Background Video -->
+     <!--
+    <div id="bgvid" style="position:absolute;z-index:-3;width:100%;height:100%;display:none;">
+        <video id="vid1" style="display:none;width:100%; heigth:100%" preload="auto" src="static/video/title.webm"></video>
+        <video id="vid2" style="display:none;width:100%; heigth:100%"  preload="auto" src="static/video/reclaim.webm"></video>
+        <video id="vid3" style="display:none;width:100%; heigth:100%" preload="auto" src="static/video/redefine.webm"></video>
+        <video id="vid4" style="display:none;width:100%; heigth:100%" preload="auto" src="static/video/relive.webm"></video>
+    </div>-->
+     <!-- End Background Video -->
+     <video autoplay="true" id="video_background" loop="loop" preload="auto"
+    style="position:absolute; z-index:-3" type="video/webm" volume="10">Your
+    browser does not support the <code>video</code> element</video> 
+    <script>
+    var x = screen.width;
+    var y = screen.height;
+    console.log(document.getElementsByTagName("video")[0]);
+    document.getElementsByTagName("video")[0].setAttribute("width",x);
+    document.getElementsByTagName("video")[0].setAttribute("height",y);
+    </script> <!-- Right Menu Bar -->
+
+
+    <div class="content_r" style=
+    "position:absolute;right:0px;text-align:right;">
+        <ul class="bmenu" style="width:300px;text-align:right">
+            <li>
+                <a class="fancybox" href="aboutus.html">About</a>
+            </li>
+
+
+            <li>
+                <a class="fancybox_ev" href="events/index.html">Events</a>
+            </li>
+
+
+            <li>
+                <a class="fancybox" href="static/schedules.html">Felicity
+                Schedule</a>
+            </li>
+
+
+            <li>
+                <a class="fancybox" href="slideshow/index.html">Gallery</a>
+            </li>
+
+
+            <li>
+                <a class="fancybox_mn" href="majornights/index.html">Major
+                Nights</a>
+            </li>
+
+
+            <li>
+                <a class="fancybox_mn" href="raghuDixit.html">Raghu Dixit
+                Live!!</a>
+            </li>
+
+
+            <li>
+                <a class="fancybox_rg" href=
+                "https://docs.google.com/forms/d/1Y9fDXpY-DXPISVsgsM8UiEru2-qxUqiDcRiBeAbZA4M/viewform">
+                Accomodation</a>
+            </li>
+
+
+            <li>
+                <a class="fancybox_sp" href="sponsors/index.html">Sponsors</a>
+            </li>
+
+
+            <li>
+                <a href="http://www.youtube.com/watch?v=mOSzvVRVZjQ" target=
+                "_blank">Teaser Video</a>
+            </li>
+            <!--            <li><a class="fancybox" href="schedule.html">Threads Schedule</a></li> -->
+
+
+            <li>
+                <a class="fancybox_up" href="updates.html">Updates</a>
+            </li>
+
+
+            <li>
+                <a class="fancybox_contact" href="contacts.html">Contact</a>
+            </li>
+        </ul>
+    </div>
+    <!-- End Right Menu Bar -->
+    <!-- JPlayer 
+    <div style="width:50px;height:50px; z-index:10;position:absolute;right:-25px;bottom:0px">
+        <div id="jquery_jplayer_1" class="cp-jplayer"></div>
+        <div id="cp_container_1" class="cp-container">
+            <div class="cp-buffer-holder"><div class="cp-buffer-1"></div><div class="cp-buffer-2"></div></div>
+            <div class="cp-progress-holder"><div class="cp-progress-1"></div><div class="cp-progress-2"></div></div>
+            <div class="cp-circle-control"></div>
+            <ul class="cp-controls">
+                <li><a href="#" class="cp-play" tabindex="1">play</a></li>
+                <li><a href="#" class="cp-pause" style="display:none;" tabindex="1">pause</a></li>
+            </ul>
+        </div>
+    </div>
+     End JPlayer -->
+    <!-- Social Buttons -->
+    <!-- Facebook Like Button -->
+
+
+    <div style="position:absolute;bottom:51px;right:170px;z-index:2;">
+        <div class="fb-like" data-href="http://facebook.com/felicity.iiith"
+        data-layout="button_count" data-send="false" data-show-faces="false"
+        data-width="100px">
+        </div>
+
+
+        <div id="fb-root">
+        </div>
+        <script>
+        (function(d, s, id) {var js, fjs = d.getElementsByTagName(s)[0];if (d.getElementById(id)) return;js = d.createElement(s); js.id = id;js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=228699193873125";fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));
+        </script>
+    </div>
+    <!-- End Facebook Like Button -->
+    <!-- Twitter Share Button -->
+
+
+    <div style=
+    "position:absolute;bottom:0px;height:25px;width:100%;background-color:rgba(16,16,16,0.5);text-align:center;font-size:16px;font-weight:bold;color:white">
+    <!--        <table style="text-align:center;margin:auto auto;"><tr>-->
+        <!--<td style="padding-left:5px;padding-right:5px;">|</td> <td><a class="link" target="_blank" href="/13">Archives</a></td>
+        <td style="padding-left:5px;padding-right:5px;">|</td> <td><a class="link" class="fancybox" href="#">The Team</a></td>-->
+        <!--        <td style="padding-left:5px;padding-right:5px;">|</td> <td><a style="color:#EEB213;" class="fancybox" href="download.html">Downloads</a></td>   -->
+        <!--        <td style="padding-left:5px;padding-right:5px;">|</td> <td><a class="link" class="fancybox" href="#">Event Winners</a></td>-->
+        <!--        <td style="padding-left:5px;padding-right:5px;">|</td>
+        </td></table>-->
+        <!--        <div style="position:absolute;text-align:right;right:0px;bottom:0px;height:25px;font-size:16px;font-weight:bold;margin:auto auto;">Best Viewed In Chrome 14+ or Firefox 6+ <div>-->
+    </div>
+    <!-- End Bottom Bar -->
+    <!-- Google Analytics -->
+    <script src="/static/js/google/analytics.js" type="text/javascript">
+    </script> 
+</body>
+</html>
