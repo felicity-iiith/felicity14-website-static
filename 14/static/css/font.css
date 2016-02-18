@@ -1,0 +1,14 @@
+.link{
+color:white;
+}
+
+.link:hover{
+color:#057CB8;
+}
+
+@font-face {
+  font-family: 'Josefin Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/OpenSans-Regular.ttf');
+}

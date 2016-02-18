@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta content="HTML Tidy for Linux (vers 25 March 2009), see www.w3.org"
+    name="generator">
+    <link href="css/font.css" rel="stylesheet" type="text/css">
+    <link href="css/demo.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/jquery.jscrollpane.css" media="all" rel="stylesheet" type=
+    "text/css">
+    <link href="../static/bootstrap/css/bootstrap.min.css" rel="stylesheet"
+    type="text/css">
+    <script src="../static/js/jquery.min.js" type="text/javascript">
+    </script>
+    <script src="js/jquery.easing.1.3.js" type="text/javascript">
+    </script>
+    <script src="js/jquery.mousewheel.js" type="text/javascript">
+    </script>
+    <script src="js/jquery.contentcarousel.js" type="text/javascript">
+    </script>
+    <script src="../static/bootstrap/js/bootstrap.min.js" type=
+    "text/javascript">
+    </script>
+    <script type="text/javascript">
+    var description = {};
+    description['antakshari']       = "<h6>Antakshari<\/h6><br/>If movies are your passion, and your world revolves around the Raj(s) and Simran(s) of Indian cinema, then this is just the place for you! Inviting all ye Filmi freaks to participate in the classic Indian time pass - the Antakshari! <ul><li>* Hindi Antakshari<br/><br/><b><b>Contacts:<\/b><br/>        <br/>       <br/><\/b><\/li><li>&nbsp;&nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp; *Telugu Antakshari<\/li><li><br/><b><b><\/b><br/><Telugu Antakshari:<br/>         <br/>     <\/b><\/li><\/ul><br/><br/><br/><a id='back' href='#' onclick=\"desc('culturalcolosseum','antakshari')\">[Back]<\/a>";
+    description['artofelectronics'] = "<h6>Art of Electronics<\/h6><br/>If you are fascinated by robots and other electronic stuff, but feel disappointed because you miss out on events because of the lack of technical knowledge, then this event is designed just for you. This event tests your creativity with electronic stuff.<br/><br/>Create any model/structure you want using various electronic components like resistors, capacitors, transistors, inductors, wires etc. Use the right component in the right place and you will find that electronics is not just for the geeks.<br/>CONTACTS<br/>DHRUBAJYOTI DUTTA 9640131029<br/>SACHIN KUMAR 9030966016<br/><br/><br/><br/><a id='back' href='#' onclick=\"desc('pulsation','artofelectronics')\">[Back]<\/a>";
+    description['ashtavadhanam']    = "<h6>Ashtavadhanam<\/h6><br/><h2>Ashtavadhanam,  being organized for the second time this Felicity will add a desi flavour to the fest. It will be a quiz exclusively in Telugu. <br/>If you think  that you have the base roots of your native tongue, proud of what you know about Telugu and the Telugu people, then be ready to put to   test your knowledge and swim in this pool of marvelling questions.<br/><br/><\/h2><br/><br/><a id='back' href='#' onclick=\"desc('literarycafe','ashtavadhanam')\">[Back]<\/a>";
+    description['bagdesign']        = "<h6>T-Shirt Design<\/h6><br/>Tees seem to be one accessory that the GenNext can't walk without. Be it the usual funky school-tee or the satchel, everyone's got one... we give you the opportunity to now paint 'em in your own colours.<br/>Go grab it...<br/>paint it....<br/>And well show the world \"your tee o' tricks\"<br/><br/>Date : 21 Feb 2014  <br/>Time:11:30-1:00 pm(Round-1) and 3:30-5:00 pm (Round-2)<br/>Venue : Kalakshetra Ground<br/><br/><b>Contacts:<\/b><br/><br/><a id='back' href='#' onclick=\"desc('kalakshetra','bagdesign')\">[Back]<\/a>";
+    description['bizwit']           = "<h6>Biz-wit<\/h6>Business certainly requires Wit : an idea can change the worlds. Biz Wit is a platform where you float your novel Business Ideas to be reviwed by the corporate minds. If you can think big, the world is yours for the taking. <br/><br/><a id='back' href='#' onclick=\"desc('threads','bizwit')\">[Back]<\/a>";
+    description['canyousell']       = "<h6>Can You Sell<\/h6><br/>Can you survive the heat of competition in an already flooded market?<br/><br/>So you think you can get the people to try out your product?<br/><br/>Whether you convince them with your words or bamboozle them with your tricks, if you think you have what it takes to be a successful marketing strategist, then Felicity '11 is the place to test your skill.<br/><br/><br/><a id='back' href='#' onclick=\"desc('culturalcolosseum','canyousell')\">[Back]<\/a>";
+    description['counterstrike']    = "<h6>Counter Strike<\/h6><br/>This one is not for the faint-hearted, Fragging to the point till it becomes second nature to be pop someone off in the head!!! CS 1.6 is a tactical FPS game where clans of 5 members compete against each other in bomb-defuse scenario.Where the Terrorist team tries to blow up the place while the Counter-Terrorists race against time to save the world.<br/><br/>So do you have what it takes to be the One-Bullet Monk?? <br/><br/><br/><br/><a id='back' href='#' onclick=\"desc('ZombieZone','counterstrike')\">[Back]<\/a>";
+    description['csi']              = "<h6>CSI<\/h6><br/>When you have eliminated the impossible, whatever remains however improbably must be the truth...\"words as immortal as the character himself. Great detectives are not born, they are made. You think you got the smarts to solve a mystery? Are you ready to follow the links down the \"rabbit hole\"? Are you game for a race against time? Got the thrill n energy to make it till the end? Be there to find out.<br/><br/><br/><br/><a id='back' href='#' onclick=\"desc('culturalcolosseum','csi')\">[Back]<\/a>";
+    description['creativewriting']  = "<h6>Creative Writing<\/h6><br/><h2>Sculpt your imagination, chisel it with a quill!<br/>Calling all ye writers, from the wistful creature lost in his own world to the unorthodox rebel ready to take on the world with his revolutionary ideas. It doesn't matter what your style of writing is. Here's a platform for you to showcase your skills. So grab a pen and bring out the wizard in you who can conjure worlds out of his imagination with the powerful wand of words.<\/h2><br/><br/><br/><a id='back' href='#' onclick=\"desc('literarycafe','creativewriting')\">[Back]<\/a>";
+    description['dbc']              = "<h6>Debug the C Bug<\/h6>You're the exterminator, drive the bugs out. Debug the C-bug tests if you have an eye for finding the evasive bugs in strange programs involved in bizzare computations. Confused? This is just the beginning.<br/><b>Contacts:<\/b><br/>Antesh Bharadwaj (+919550980972)<br/>Karan Thapar (+919573021181)<br/>Time : 02:00 pm : 04:00 pm (17th Feb)<br/>Prizes:<br/>1st prize : Rs 1250<br/>2nd prize : Rs 750<br/><a id='back' href='#' onclick=\"desc('threads','dbc')\">[Back]<\/a>";
+    description['debate']           = "<h6> Open Debate. <\/h6>IIIT-H will be hosting a debate trying to address critical topics of stopping online piracy , protecting intellect property and other issues, with special reference to the American story of SOPA PIPA. Under the topic \"Open and Free Internet\" it will be a platform for a bout over redefining the \"freedom\" of something that has already become part and parcel of modern informative living. <br/>Agenda : Fight against Online Privacy. <br/>Event Contacts : <br/> 1. Rishabh Dhall - +91-8886476416<br/>2. Mudit Bhargava - +91-9885031963 <br/>3. Srijan Tiwari - +91-7893683462 <br/><a id='back' href='#' onclick=\"desc('literarycafe','debate')\">[Back]<\/a>";
+    description['dota']             = "<h6>Defence of the Ancients (DotA)<\/h6><br/>Based on the real-time strategy video game Warcraft III, Defence of the Ancients is a highly popular LAN game these days with college going guys. DotA requires a high level of coordination and instinctive split-second decision making unseen before in any other Role Playing Game. So what's your pick?<br/><br/>Razer, Thrall or Earthshaker?<br/><br/>Be there and be Imba!!<br/><br/><br/><br/><a id='back' href='#' onclick=\"desc('ZombieZone','dota')\">[Back]<\/a>";
+    description['embeddedchallenge'] = "<h6>Embedded Challenge<\/h6><br/>Embedded Challenge 2012 is designed to bring out the true engineer in you. Here you have to come up with everything, right from the Idea to giving your idea a life and finally a presentation in front of leading technologists from the industry as well as from various institutes. So, get ready and put your thinking cap on. Who knows, the next big design may just have your name on it!!!<br/><br/><br/><br/><a id='back' href='#' onclick=\"desc('pulsation','embeddedchallenge')\">[Back]<\/a>";
+    description['euphonica']        = "<h6>Euphonica<\/h6><br/>\"Geet\" becomes \"Sangeet\" only after being aided by instruments.<br/><br/>This event features the boundless domain of instrumental music varying from the \"traditional Tabla\" to the \"Dramatic Drums\" - a symphonic experience waiting to mesmerize you!!<br/><br/><br/><a id='back' href='#' onclick=\"desc('culturalcolosseum','euphonica')\">[Back]<\/a>";
+    description['equiz']            = "<h6>E-Quiz<\/h6><br/>Are you an Electronic Geek? Does your life circle around transistors, capacitors and resistors? And are you looking for a place to show to the world your geekiness? Then Pulsation presents E-Quiz just for talents like you.<br/>CONTACTS<br/>DHRUBAJYOTI DUTTA 9640131029<br/>AASHIT VERMA 8719000001<br/><br/><br/><br/><a id='back' href='#' onclick=\"desc('pulsation','equiz')\">[Back]<\/a>";
+    description['extempore']        = "<h6>Extempore<\/h6><br/><h2>Against each other, but still together.An extempore with a twist! Can you speak against your own partner, yet with a subtle coordination to triumph over the other teams? An extempore in which a team of two would be presented with a topic and one member will have to speak for the motion while the other member against the motion. So if you know how to read both sides of a coin, come and give it a shot.<\/h2><br/><b>Contacts:<\/b><br/>Prateek 8099948660 prateekforindia@gmail.com <br/>Raghav 9030864101 raghavcoolguy01@gmail.com<br/><br/><a id='back' href='#' onclick=\"desc('literarycafe','extempore')\">[Back]<\/a>";
+    description['facade']           = "<h6>Facade<\/h6><br/> Feeling blue, or green with envy, red with rage or having a shade of ecstasy?? Realize your fantasies, convey your expressions, and emote with colors!<br/><br/>Date : 21 Feb 2014 <br/>Time : 2:00-3:30 pm  <br/>Venue : Kalakshetra Ground<br/><br/><b>Contacts:<\/b><br/>Shiv Raj<br/><a id='back' href='#' onclick=\"desc('kalakshetra','facade')\">[Back]<\/a>";
+    description['fast']             = "<h6>Fast and the curious.<\/h6>If you can learn with the speed of lightening, hit us onsite. Fast and curious is a series of tests that measures your rate of change from a newbie to a veteran. We assign you tasks, you're given a finite Internet Window; bing - google - whatever and learn, and accomplish the mission. If you're fast and you 're curious, handshake initiated.<br/><b>Contacts:<\/b><br/>Karan Thapar (+919573021181)<br/>Antesh Bharadwaj (+919550980972)<br/>Time : 02:00 pm : 05:00 pm (18th Feb)<br/>Prizes:<br/>1st prize : Rs 1500<br/>2nd prize : Rs 1000<br/>3rd prize : Rs 500<br/><a id='back' href='#' onclick=\"desc('threads','fast')\">[Back]<\/a>";
+    description['fifa']             = "<h6>FIFA<\/h6><br/>One of the best PC football games with minimum requirements, FIFA not only allows impressive gameplay but a plethora of tactics to choose from and smooth multiplayer gaming experience. You get to choose from a variety of teams and stadia. The catch of the tournament is the restriction on the level of a team in a particular round.<br/><br/><br/><br/><a id='back' href='#' onclick=\"desc('ZombieZone','fifa')\">[Back]<\/a>";
+    description['fortress']         = "<h6>The Fortress<\/h6>This is a place for you to test your hacking skills. Bring out the craze in you by competing against the best of hackers. Exploit the loop holes in your opponents system to drive out your competitors and emerge as a winner<br/><b>Contacts:<\/b><br/>Gautam Bajaj (+919394288885)<br/>Amit Bansal(+919030665101)<br/>Time : 01:00 pm : 06:00 pm (19th Feb)<br/>Prizes:<br/>1st prize : Rs 1250<br/>2nd prize : Rs 750<br/><br/><br/><a id='back' href='#' onclick=\"desc('threads','fortress')\">[Back]<\/a>";
+    description['glasspainting']    = "<h6>Glass Painting<\/h6><br/>Make a cocktail and paint it too.....and this time on a piece of glass.<br/><br/><a id='back' href='#' onclick=\"desc('kalakshetra','glasspainting')\"><br/><br/>[Back]<\/a>";
+    description['graffiti']         = "<h6>Graffiti<\/h6><br/>Exude your style Paint the wall wild!! Do you have a message for the world? Feel like a rebel? Express your creative retaliation through the raving and vandalis-tic art. Graffiti!!<br/><br/>Date : 23 Feb 2014<br/>Time :10:30-12:30pm(prelims) and 4:00-5:30pm (finals) <br/>Venue : Kalakshetra Ground<br/><br/><b>Contacts:<\/b><br/>Shiv Raj<br/><a id='back' href='#' onclick=\"desc('kalakshetra','graffiti')\">[Back]<\/a>";
+    description['groupdiscussion']  = "<h6>Group Discussion<\/h6><br/><h6>presented by T.I.M.E<\/h6><h2>Immerse yourself into some topnotch discussion.Are you armed with that unbeatable weapon of giving plausible reasons to justify your foothold on any topic? Do you own that spark that can keep a discussion from dying out? Could you simultaneouly acknowledge and challenge others' view points while still maintaining your stand in the club? If your answer is in the affirmative, then come along, be a part of this spectacular event which is known as an exchange of views by some, a symposium by others, and the Group Discussion by us.<\/h2><br/><br/>Akshay Sharma 7416500791 akshay2047@gmail.com<br/>Anshul Arzare 9885950585 anshul.arzare@gmail.com<br/>Shubham Goyal 9160767544 saksham15@gmail.com<br/><a id='back' href='#' onclick=\"desc('literarycafe','groupdiscussion')\">[Back]<\/a>";
+    description['handofgod']        = "<h6>Hand of God<\/h6><br/>The all powerful Hand of God believed to have the power to control any machine is given to you. Can you strike the perfect balance between Speed and Control, and navigate this path full of obstacles in your quest to attain ETERNAL GLORY.<br/><br/><br/><br/><a id='back' href='#' onclick=\"desc('pulsation','handofgod')\">[Back]<\/a>";
+    description['informals']        = "<h6>Informals<\/h6><br/>Tired of pushing the limits and experiencing the heat of competitions ? Are you outside the eligibility domain of most of the events? <br/><br/>In either case, the Lounge is the place for you to be in - where 'masti' takes precedence over 'matter' and 'logic' bows before 'levity'. This Felicity, indulge in frivolity!<b><br/><b>Contacts:<\/b><br/>Kartik Shukla-9550251028 <br/> Vinay Bajaj-9703815611<br/>Himanshu Nayyar-8142095390<br/><\/b><a id='back' href='#' onclick=\"desc('culturalcolosseum','informals')\">[Back]<\/a>";
+    description['itquiz']           = "<h6>IT-Quiz<\/h6>So do you consider yourself a techno junkie? Or do you just love to dwell in the world of cyberspace? Here's comes the stage that has been set up just for you! It's time to put up those thinking cap of yours and ready yourself for the fiesta of geeks- X'Quiz -IT.<br/><b>Contacts:<\/b><br/>Goutam Tulsiyan(+919550602072)<br/>Time : 11:30 am : 01:30 pm (19th Feb)<br/>Prizes:<br/>1st prize : Rs 1500<br/>2nd prize : Rs 1000<br/>3rd prize : Rs 500<br/><br/><a id='back' href='#' onclick=\"desc('threads','itquiz')\">[Back]<\/a>";
+    description['justaminute']      = "<h6>Just A Minute<\/h6><br/><h6>presented by T.I.M.E<\/h6><h2>Endure a marathon of a different kind.Do you have it in you to stand a grueling marathon, where you would face each and every type of literary quest? Are you confident enough that you can make the good word, debate, solve a puzzle, spin a yarn, sail through a quiz on English literature all at the same time? Then this is one place you should come and conquer. Come and show everyone your astonishing hold in this field and make us bow to your marvelous ingenuity.<\/h2><br/><b>Contacts:<\/b><br/>Devender 9985630243 goyaldevender@gmail.com <br/>Aniruddh 9030132476<br/><a id='back' href='#' onclick=\"desc('literarycafe','justaminute')\">[Back]<\/a>";
+    description['king']             = "<h6>King of Bread Boards<\/h6><br/>This is an onsite event which checks the speed of circuit designers to build prototype circuits and to experiment using this reusable piece of equipment.<br/><a style='font-weight:bold' href='https://docs.google.com/spreadsheet/viewform?formkey=dFNhSldtMDFHd2pJdS1EQldBZEtic3c6MQ' target='_blank'>Click here<\/a> to register<br/>event on 18th Feb<br/><b>Contacts:<\/b><br/>DHRUBAJYOTI DUTTA 9640131029<br/>SHUBHAM GUPTA 9581322278<br/>AAKASH AGARWAL 9652081947<br/><br/><br/><a id='back' href='#' onclick=\"desc('pulsation','king')\">[Back]<\/a>";
+    description['kulwinder']        = "<h6>Kulwinder singh<\/h6>Mr.Kulwinder singh, an ISB alumnus is presently the Chief Executive Officer at postnoon, Hyderabad's First afternoon paper. He is also an Advisory Committee Member at DMA India. Mr.Kulwinder was one of the speakers at Tedx Gachibowli 2010, he has also keynoted numerous industry forums,  Corporate Communication Summits and IMA National Brand Summit. He specialises in areas like Executive leadership, Operational Management, Business Development and Strategic decision making. His newspaper \"Postnoon\" contains articles that are concise and precise so that the reader can take in all the key facts quickly, and the news is chosen for its relevance to the lives of its target audience and has succeeded in its ability to stimulate the readers.<br/><br/><br/><br/><a id='back' href='#' onclick=\"desc('talks','kulwinder')\">[Back]<\/a>";
+    description['linefollower']     = "<h6>Line Follower<\/h6><br/>One of the classic events of all time, the LINE FOLLOWER is back this FELICITY. If you are an enthusiast of autonomous bots, then this is a event you should not miss. Be there this FELICITY in IIIT-H to compete with the best line following bots and emerge the winner by being the fastest.<br/><br/><br/><br/><a id='back' href='#' onclick=\"desc('pulsation','linefollower')\">[Back]<\/a>";
+    description['literarymarathon'] = "<h6>Literary Marathon<\/h6><br/><h2>Endure a marathon of a different kind.<br/>Do you have it in you to stand a grueling marathon, where you would face each and every type of literary quest? Are you confident enough that you can make the good word, debate, solve a puzzle, spin a yarn, sail through a quiz on English literature all at the same time? Then this is one place you should come and conquer. Come and show everyone your astonishing hold in this field and make us bow to your marvelous ingenuity.<\/h2><br/><a id='back' href='#' onclick=\"desc('literarycafe','literarymarathon')\">[Back]<\/a>";
+    description['mapdesign']        = "<h6>Mag Design<\/h6><br/>Design the layout for a magazine, right from the first scratch...You get to decide the colours, the pictures, the design et al....All in all live your high-school fantasy to design a magazine the way you'd like it and be crowned the \"Mag-King/Queen\".<br/><br/>Date : 18th Feb 2012 <br/>Time : 11:00 am<br/>Venue : kalakshetra Ground<br/><br/><b>Contacts:<\/b><br/>Medha Pathak : 9703895093<br/><a id='back' href='#' onclick=\"desc('kalakshetra','mapdesign')\">[Back]<\/a>";
+    description['nikita']           = "<h6>Nikita Singh<\/h6>Its hard to imagine a  20 year old final year student pursuing a bachelor's degree in pharmacy writing books which gain recognition all over India. Nikita singh is the writer who accidentally tried her hand at writing and published her first work 'Love@Facebook' in May 2011. Her work was instantly recognised and mails started to flow complementing her work. She believes that she can provide the young indian population with something they can enjoy reading. Some of her other works are 'Accidentally in Love' ,'If It's Not Forever...It's Not Love!' which were published recently.<br/><br/><br/><br/><a id='back' href='#' onclick=\"desc('talks','nikita')\">[Back]<\/a>";
+    description['nfs']              = "<h6>Need For Speed<\/h6><br/>Do you have the Need For Speed? Then this is the platform for you to get your ultimate rush and blood pumping. NFS Most Wanted is easily the most popular racing games of its times. Smooth LAN play, cool graphics, nice storyline are what stand out in the game.<br/><br/>Ready for a little road rage? <br/>Dodging police cars, smashing opponents, and having a bounty on your heads is that your cuppa tea?? Park in to let us know.....<br/><br/><br/><br/><a id='back' href='#' onclick=\"desc('ZombieZone','nfs')\">[Back]<\/a>";
+    description['nukkad']           = "<h6>Nukkad Natak<\/h6><br/>Updated Soon!!<br/><\/br><br/><br/><a id='back' href='#' onclick=\"desc('culturalcolosseum','nukkad')\">[Back]<\/a>";
+    description['paperdressing']    = "<h6>Paper Dressing<\/h6><br/>Do you see yourself as the next Manish Malhotra or Neeta Lulla? Here comes your first test -- dress up a friend in a costume made entirely out of newspapers. How's that for a challenge ?<br/><br/>Date : 23 Feb 2014 <br/>Time :2:00-3:30 pm <br/>Venue : Kalakshetra Ground<br/><br/><b>Contacts:<\/b><br/><br/><a id='back' href='#' onclick=\"desc('kalakshetra','paperdressing')\">[Back]<\/a>";
+    description['potpainting']      = "<h6>Pot Painting <\/h6><br/>Bored of the prosaic side of life??<br/> Then let your ideas amass on a pot. Get a glimpse of the rich heritage of Indian handicrafts by conveying the colors of your imagination on a piece of pottery.<br/><br/>Date :22 Feb 2014 <br/>Time :11:30-1:00 pm<br/>Venue : Kalakshetra Ground<br/><br/><b>Contacts:<\/b><br/><br/><a id='back' href='#' onclick=\"desc('kalakshetra','potpainting')\">[Back]<\/a>";
+    description['quick']            = "<h6>The Quick and the Dead<\/h6>'Quick' and 'Dead', the two adjectives are mutually exclusive and exhaustive. Be quick or be dead. This is an onsite programming contest where your coding speed is tested. The ability to provide a working code in a stipulated time is what we seek in you. Think quick and type quick, the hour glass is running out.<br/><b>Contacts:<\/b><br/>Amit Bansal (+919030665101)<br/>Kaushik Iska (+918297276525)<br/>Time : 11:30 am : 01:30 pm (17th Feb)<br/>Prizes:<br/>1st prize : Rs 1500<br/>2nd prize : Rs 1000<br/>3rd prize : Rs 500<br/><br/><a id='back' href='#' onclick=\"desc('threads','quick')\">[Back]<\/a>";
+    description['rangoli']          = "<h6>Rangoli <\/h6><br/>Make a Rangoli with your imagination let your smile shine through your creation!!Make Mother Earth look colorful, vivid and fill the crowd's mind with excitement, wonder and pleasure.<br/><br/>Date :22 Feb 2014 <br/>Time :4:00-5:30 pm<br/>Venue : Kalakshetra Ground<br/><br/><b>Contacts:<\/b><br/>Shiv Raj<br/><a id='back' href='#' onclick=\"desc('kalakshetra','rangoli')\">[Back]<\/a>";
+    description['roborallyrace']    = "<h6>Robo Rally Race<\/h6><br/><a href='/web2py/roborally'>Click Here To Register<\/a><br/><br/><br/><a id='back' href='#' onclick=\"desc('pulsation','roborallyrace')\">[Back]<\/a>";
+    description['roborugby']        = "<h6>Robo Rugby<\/h6><br/>Gear up this February to watch Rugby played not by broad shouldered athletic guys but technically smouldered robots!!<br/><br/>Felicity 2k14 presents ROBO RUGBY- a game of skill and power. The thrill and heat produced during the game of ruby is created this time with the help of combat robots.<br/>CONTACTS<br/><br/><br/><br/><br/><a id='back' href='#' onclick=\"desc('pulsation','roborugby')\">[Back]<\/a>";
+    description['sargam']           = "<h6>Sargam<\/h6><br/>Ever dreamt of becoming the next singing hotshot of tinsel town? Ever managed to put the crowds under a spell with that magical voice of yours? All you wannabe singers, it's time for some action. Revitalize your vocal chords, brush up those notes, and brace yourself for your moment in the spotlight.<br/><b><b>Contacts:<\/b><br/><\/br><\/b><br/><br/><a id='back' href='#' onclick=\"desc('culturalcolosseum','sargam')\">[Back]<\/a>";
+    description['scrabble']         = "<h6>Scrable<\/h6><br/>The good old scrabble with a hint of technology. Make the highest scoring word from the letters shown on the screen.<br/>Classic rules, classic game.......<br/>All we need now are some \"scabulous\" people to challenge their own minds<br/><br/><br/><br/><a id='back' href='#' onclick=\"desc('literarycafe','scrabble')\">[Back]<\/a>";
+    description['spintheyarn']      = "<h6>Spin The Yarn<\/h6><\/br><h2>Kya tum kahani bun sakte ho?<br/>How about the traditional Spin The Yarn with a desi flavor? Introducing for the first time in Felicity, Spin the yarn in Hindi. Tum kitne bade kathakar ho, saabit karo aake. Kaksha der se aane ke liye bahana to banaye hoge shikchak ke saamne, par yahaan itne bade bade kahani bunne waalon ke saamne tik paoge? Agar himmat hai to aao apni katha buno aur usse sab ko hakaa-bakka kar do!<\/h2><\/br><b>Contacts:<\/b><br/> <br/><br/><a id='back' href='#' onclick=\"desc('literarycafe','spintheyarn')\">[Back]<\/a>";
+    description['stomptheyard']     = "<h6>Stomp The Yard<\/h6><br/>Have what it takes to compose poetry with your legs and sweep everyone off their feet? If yes, then Felicity is just the floor for your masterpiece to be orchestrated. Be it Group or Solo, Classical or Western, we've got a canvas for all.<br/>So put on your dancing shoes and remember to leave all those inhibitions behind coz all that we need here is for you to bring something new to the floor!<br/><b><b>Contacts:<\/b><br/> <br/> <br/><\/b><a id='back' href='#' onclick=\"desc('culturalcolosseum','stomptheyard')\"><br/><br/>[Back]<\/a>";
+    description['talentshowcase']   = "<h6>Talent Showcase<\/h6><br/>Make the world stand up and take notice of you and let it be known that YOU have arrived.<br/><br/>Come Felicity, Talent Showcase presents you with an opportunity to showcase your talent, personality, confidence, flamboyance and ability to sweep the crowd off its feet. Compete against the very best to claim the most coveted crown in the town.<br/><b><b>Contacts:<\/b><br/>Raghav Katyal- 9030864101<br/>Prateek Saxena- 8899948660 <br/><\/b><br/><br/><a id='back' href='#' onclick=\"desc('culturalcolosseum','talentshowcase')\">[Back]<\/a>";
+    description['telewise']         = "<h6>Telewise<\/h6><\/br><h2>It's gonna be - wait for it - legendary.Do you take pride from the amount of inside information you possess on movies and sitcoms? If yes, then there's only one way to prove your haughtiness. The game's re-inventing itself this Felicity and by george, breaking prison would look like a child's play when compared to this titanic quizzing event where you may get lost and home alone if you leave your game behind. Caution:- You might require more than just a cheerleader to save your world as we promise to leave it all shaken and stirred.<\/h2><\/br><b>Contacts:<\/b><br/>Aniruddh Gaur 9030132476 mrhuntag@gmail.com <br/>Rashmi 1rashmi1111@gmail.com<br/><a id='back' href='#' onclick=\"desc('literarycafe','telewise')\">[Back]<\/a>";
+    description['thebigask']        = "<h6>The Big Ask<\/h6><br/><h2>Nuke up your cerebral limits!<br/>If you'd only use your gray matter, you'd see the answer in a minute.The Big Ask: Do you have the guts to compete with the brightest of brains in the country? If you see yourself giving a big nod, then come, this Felicity to The Big Ask, the most entrancing quiz you would have ever come across. Inject yourself with a high dose of general awareness and garner a chance to be endowed with The Best Quizzing Team of the city tag.<\/h2><br/>Contacts<br/>Dhrubajyoti 9640131029 dhrubad.5009@gmail.com<br/>Anshul 9573705595 anshul.iiith@gmail.com<br/><a id='back' href='#' onclick=\"desc('literarycafe','thebigask')\">[Back]<\/a>";
+    description['threemeninaboat']  = "<h6>Three Men In A Boat<\/h6><br/><h2>The ultimate mishmash of fun, actions and spontaneity. Always been short of words, eh? Never mind. We will give you a platform where weakness will be your strength and acting your forte. Ladies and gentlemen, the charades is back with a bang. Prove your mettle in this dumbfounding game of Three Men in a Boat and let the world know who the maestro of pantomime is!<\/h2><br/><br/><br/><a id='back' href='#' onclick=\"desc('literarycafe','threemeninaboat')\">[Back]<\/a>";
+    description['wordwideweb']      = "<h6>Word Wide Web<\/h6><br/><h2>If playing with words is your skill, herez something to thrill Are you one of those Word-Wizards whose mere gaze is powerful enough to command the scattered rowdy letters to fall back into place? If yes, then compare the might of your magic charm with that of the Word-Spider out there ever ready to entangle you in its word-web.<\/h2><br/>Contacts<br/><br/><br/><a id='back' href='#' onclick=\"desc('literarycafe','wordwideweb')\">[Back]<\/a>";
+
+    function desc(dept, eventName){
+    var container = document.getElementById(dept);
+    var tempHTML =  container.innerHTML;
+    container.innerHTML = description[eventName];
+    description[eventName] = tempHTML;
+    }
+    </script>
+
+    <title>Events</title>
+</head>
+
+<body style="background-color:rgba(0,0,0,0.5);width:95%;">
+    <div class="container">
+        <div class="ca-container" id="ca-container">
+            <div class="ca-wrapper">
+                <div class="ca-item ca-item-1">
+                    <div class="ca-item-main">
+                        <a class="ca-more-icon" href="#"></a>
+
+                        <div class="ca-icon">
+                        </div>
+
+
+                        <h3>Threads</h3>
+                        <a href="http://www.qualcomm.co.in/" target=
+                        "_blank"><img alt="Qualcomm" height="50px" src=
+                        "../sponsors/img/sponsors/b_qualcomm.jpg" width=
+                        "100px"></a><br>
+                        <a class="link" href=
+                        "http://felicity.iiit.ac.in/threads/" target=
+                        "_blank">Click here for HomePage</a><br>
+                        <br>
+                        <span>Because to iterate is human, to recurse is
+                        divine</span> <a class="ca-more" href="#" id="link"
+                        name="link">more...</a>
+                    </div>
+
+
+                    <div class="ca-content-wrapper">
+                        <div class="ca-content">
+                            <a class="ca-close" href="#">close</a>
+
+                            <div class="ca-content-text" id="threads">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <h6>Online</h6>
+
+
+                                            <ul style="font-size:20px">
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "http://felicity.iiit.ac.in/threads/events/codecraft"
+                                                style="width:100px" target=
+                                                "_blank">Code-Craft</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "http://felicity.iiit.ac.in/threads/events/tle"
+                                                style="width:100px" target=
+                                                "_blank">TLE</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "http://felicity.iiit.ac.in/threads/events/gordian-knot"
+                                                style="width:100px" target=
+                                                "_blank">Gordian-Knot</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "http://felicity.iiit.ac.in/threads/events/cache-in"
+                                                style="width:100px" target=
+                                                "_blank">Cache-in</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "http://felicity.iiit.ac.in/threads/events/kernel-cruise"
+                                                style="width:100px" target=
+                                                "_blank">Kernel-Cruise</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "http://felicity.iiit.ac.in/threads/events/break-in"
+                                                style="width:100px" target=
+                                                "_blank">Break in</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "http://felicity.iiit.ac.in/threads/events/strange-loop"
+                                                style="width:100px" target=
+                                                "_blank">Strange-Loop</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "http://felicity.iiit.ac.in/threads/events/equity-pulse"
+                                                style="width:100px" target=
+                                                "_blank">Equity-Pulse</a>
+                                                </li>
+                                                <!--                                            <li style="padding-left:10px;padding-bottom:10px"><a class="btn btn-large btn-primary" target="_blank" style="width:100px" href="http://felicity.iiit.ac.in/threads/events/nlp-marathon">NLP-Marathon</a></li>
+                                            <li style="padding-left:10px;padding-bottom:10px"><a class="btn btn-large btn-primary" target="_blank" style="width:100px" href="http://felicity.iiit.ac.in/threads/events/cns-marathon">CNS-Marathon</a></li>
+-->
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "http://felicity.iiit.ac.in/threads/events/kode-da-circuit"
+                                                style="width:100px" target=
+                                                "_blank">Kode da Circuit</a>
+                                                </li>
+                                                <!--                                            <li style="padding-left:10px;padding-bottom:10px"><a class="btn btn-large btn-primary" target="_blank" style="width:100px" href="http://felicity.iiit.ac.in/threads/events/digidraw">Digidraw</a></li>
+-->
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "http://felicity.iiit.ac.in/threads/events/paper-presentation"
+                                                style="width:100px" target=
+                                                "_blank">Paper PPT</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "http://felicity.iiit.ac.in/threads/events/tech-quiz"
+                                                style="width:100px" target=
+                                                "_blank">Tech Quiz</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "http://felicity.iiit.ac.in/threads/events/hackathon"
+                                                style="width:100px" target=
+                                                "_blank">Hackathon</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "http://felicity.iiit.ac.in/threads/events/triathlon"
+                                                style="width:100px" target=
+                                                "_blank">Triathlon</a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <!--
+                                    <tr><td>
+                                        <h6>Onsite</h6>
+                                        <ul style="font-size:20px">
+                                            <li><a href="#" onclick="desc('threads','fast')">Fast n Curious</a></li>
+                                            <li><a href="#" onclick="desc('threads','bizwit')">Bizwit</a></li>
+                                            <li><a href="#" onclick="desc('threads','dbc')">Debug the C Bug</a></li>
+                                            <li><a href="#" onclick="desc('threads','fortress')">Fortress</a></li>
+                                            <li><a href="#" onclick="desc('threads','quick')">Quick and the dead</a></li>
+                                            <li><a href="#" onclick="desc('threads','itquiz')">The IT Quiz</a></li>
+                                        </ul>
+                                    </td></tr>
+ 
+                                -->
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ca-item ca-item-2">
+                    <div class="ca-item-main">
+                        <a class="ca-more-icon" href="#"></a>
+
+                        <div class="ca-icon">
+                        </div>
+
+
+                        <h3>Pulsation</h3>
+                        <a href="http://www.qualcomm.co.in/" target=
+                        "_blank"><img alt="Qualcomm" height="50px" src=
+                        "../sponsors/img/sponsors/b_qualcomm.jpg" width=
+                        "100px"></a><br>
+                        <a class="link" href=
+                        "http://felicity.iiit.ac.in/pulsation/" target=
+                        "_blank">Click here for HomePage</a><br>
+                        <br>
+                        <span>Transform your neural impulses to electrical
+                        ones.</span> <a class="ca-more" href="#">more...</a>
+                    </div>
+
+
+                    <div class="ca-content-wrapper">
+                        <div class="ca-content">
+                            <a class="ca-close" href="#">close</a>
+
+                            <div class="ca-content-text" id="pulsation">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <h6>Online</h6>
+
+
+                                            <ul style="font-size:20px">
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "http://felicity.iiit.ac.in/pulsation/mystre.php"
+                                                style="width:100px" target=
+                                                "_blank">mystr-e</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "http://felicity.iiit.ac.in/pulsation/roborally.php"
+                                                style="width:100px" target=
+                                                "_blank">robo rally race</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "http://felicity.iiit.ac.in/pulsation/robosoccer.php"
+                                                style="width:100px" target=
+                                                "_blank">robosoccer</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "http://felicity.iiit.ac.in/pulsation/ultimatepulse.php"
+                                                style="width:100px" target=
+                                                "_blank">ultimate pulse</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "http://felicity.iiit.ac.in/threads/kodedacircuit/home/"
+                                                style="width:100px" target=
+                                                "_blank">kode da circuit</a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                    <!--
+                                    <tr><td>
+                                        <h6>Onsite</h6>
+                                        <ul style="font-size:20px">
+                                            <li><a href="#" onclick="desc('pulsation', 'king')">King of bread boards</a></li>
+                                            <li><a href="#" onclick="desc('pulsation', 'artofelectronics')">Art of electronics</a></li>
+                                            <li><a href="#" onclick="desc('pulsation', 'linefollower')">Line Follower</a></li>
+                                            <li><a href="#" onclick="desc('pulsation', 'embeddedchallenge')">Embedded Challenge</a></li>
+                                            <li><a href="#" onclick="desc('pulsation', 'roborallyrace')">Robo Rally Race</a></li>
+                                        </ul>
+                                    </td></tr>
+                                -->
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ca-item ca-item-3">
+                    <div class="ca-item-main">
+                        <a class="ca-more-icon" href="#"></a>
+
+                        <div class="ca-icon">
+                        </div>
+
+
+                        <h3>Cultural Colosseum</h3>
+                        <a href="https://paytm.com/" target=
+                        "_blank"><img height="50px" src=
+                        "../sponsors/img/sponsors/PayTM-Logo.png" width=
+                        "100px"></a><br>
+                        <span>Got Acting/Dancing/Singing skills? Do you have it
+                        in you to mesmerize the crowd with your word-prowess?
+                        Cultural Colosseum awaits you.</span> <a class=
+                        "ca-more" href="#">more...</a>
+                    </div>
+
+
+                    <div class="ca-content-wrapper">
+                        <div class="ca-content">
+                            <a class="ca-close" href="#">close</a>
+
+                            <div class="ca-content-text" id=
+                            "culturalcolosseum">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <h6>Cultural Colosseum</h6>
+
+
+                                            <ul style="font-size:20px">
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href="#" onclick=
+                                                "desc('culturalcolosseum', 'stomptheyard')"
+                                                style="width:100px">Stomp The
+                                                Yard</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href="#" onclick=
+                                                "desc('culturalcolosseum', 'antakshari')"
+                                                style=
+                                                "width:100px">Antakshari</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href="#" onclick=
+                                                "desc('culturalcolosseum', 'euphonica')"
+                                                style=
+                                                "width:100px">Euphonica</a>
+                                                </li>
+                                                <!--
+                                        <li><a href="#" onclick="desc('culturalcolosseum', 'canyousell')">Can You Sell</a></li>
+                                        <li><a href="#" onclick="desc('culturalcolosseum', 'informals')">Informals</a></li>
+                                        <li><a href="#" onclick="desc('culturalcolosseum', 'talentshowcase')">Talent Showcase</a></li>
+                                        <li><a href="#" onclick="desc('culturalcolosseum', 'sargam')">Sargam</a></li>
+                                        <li><a href="#" onclick="desc('culturalcolosseum', 'nukkad')">Nukkad Natak</a></li>
+                                        <li><a href="#" onclick="desc('culturalcolosseum','csi')">CSI</a></li>
+-->
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ca-item ca-item-4">
+                    <div class="ca-item-main">
+                        <a class="ca-more-icon" href="#" onclick=
+                        "window.open('http://www.coolage.in/?ncid=iiit');"></a>
+
+                        <div class="ca-icon">
+                        </div>
+
+
+                        <h3>Literary Cafe</h3>
+                        <a href="http://www.coolage.in/?ncid=iiit" onclick=
+                        "window.open('http://felicity.iiit.ac.in/litcafe/');"
+                        target="_blank"><img height="50px" src=
+                        "../sponsors/img/sponsors/coolage.png" width=
+                        "100px"></a><br>
+                        <a class="link" href=
+                        "http://felicity.iiit.ac.in/litcafe/" target=
+                        "_blank">Click here for HomePage</a><br>
+                        <br>
+                        <span>Write for yourselves and celebrate
+                        writing.</span> <a class="ca-more" href="#">more...</a>
+                    </div>
+
+
+                    <div class="ca-content-wrapper">
+                        <div class="ca-content">
+                            <a class="ca-close" href="#">close</a>
+
+                            <div class="ca-content-text" id='literarycafe'>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <h6>Literary Cafe</h6>
+
+
+                                            <ul style="font-size:20px">
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "http://felicity.iiit.ac.in/litcafe/events/talespin"
+                                                style="width:100px" target=
+                                                "_blank">Tale Spin</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "http://felicity.iiit.ac.in/litcafe/events/freeverse"
+                                                style="width:100px" target=
+                                                "_blank">Free Verse</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "http://felicity.iiit.ac.in/litcafe/events/kryptoknight"
+                                                style="width:100px" target=
+                                                "_blank">KryptoKnight</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "http://felicity.iiit.ac.in/litcafe/events/spokenword/"
+                                                style="width:100px" target=
+                                                "_blank">Spoken Word</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "http://felicity.iiit.ac.in/litcafe/events/"
+                                                style="width:100px" target=
+                                                "_blank">Treasure Hunt</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "http://felicity.iiit.ac.in/litcafe/events/blogfest/"
+                                                onclick=
+                                                "window.open('http://www.coolage.in/?ncid=iiit');"
+                                                style="width:100px" target=
+                                                "_blank">CoolAge Blogfest</a>
+                                                </li>
+                                            </ul>
+                                            <!--
+                                    <ul style="font-size:20px">
+                                        <li><a href="#" onclick="desc('literarycafe','ashtavadhanam')">Ashtavadhanam</a></li>
+                                        <li><a href="#" onclick="desc('literarycafe','extempore')">Extempore</a></li>
+                                        <li><a href="#" onclick="desc('literarycafe','groupdiscussion')">Group Discussion</a></li>
+                                        <li><a href="#" onclick="desc('literarycafe','justaminute')">Just A Minute</a></li>
+                                        <li><a href="#" onclick="desc('literarycafe','literarymarathon')">Literary Marathon</a></li> 
+                                        <li><a href="#" onclick="desc('literarycafe','spintheyarn')">Spin The Yarn</a></li>
+                                        <li><a href="#" onclick="desc('literarycafe','telewise')">Telewise</a></li>
+                                        <li><a href="#" onclick="desc('literarycafe','threemeninaboat')">Three Men In A Boat</a></li>
+                                        <li><a href="#" onclick="desc('literarycafe','thebigask')">The Big Ask</a></li>
+                                        <li><a href="#" onclick="desc('literarycafe','wordwideweb')">Word Wide Web</a></li>
+                                        <li><a href="#" onclick="desc('literarycafe','scrabble')">Scrabble</a></li>
+                                        <li><a href="#" onclick="desc('literarycafe','debate')">Open Debate</a></li>
+                                -->
+                                        </td>
+                                    </tr>
+                                </table>
+                                <br>
+                                <br>
+                                <span>Contacts:<br>
+                                Arpit Merchant
+                                arpit.merchant@students.iiit.ac.in
+                                +91-7799234111<br>
+                                Nikhar Agarwal
+                                nikhar.agrawal@students.iiit.ac.in<br>
+                                Monica Reddy
+                                monicam.reddy@students.iiit.ac.in</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ca-item ca-item-5">
+                    <div class="ca-item-main">
+                        <a class="ca-more-icon" href="#"></a>
+
+                        <div class="ca-icon">
+                        </div>
+
+
+                        <h3>Kalakshetra</h3>
+                        <a href="http://www.manyagroup.com/" target=
+                        "_blank"><img height="50px" src=
+                        "../sponsors/img/sponsors/manya.png" width=
+                        "100px"></a><br>
+                        <br>
+                        <br>
+                        <span>Platform to capture your Imagination, Creativity,
+                        Exuberance</span> <a class="ca-more" href=
+                        "#">more...</a>
+                    </div>
+
+
+                    <div class="ca-content-wrapper">
+                        <div class="ca-content">
+                            <a class="ca-close" href="#">close</a>
+
+                            <div class="ca-content-text" id='kalakshetra'>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <h6>Kalakshetra</h6>
+
+
+                                            <ul style="font-size:20px">
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href="#" onclick=
+                                                "desc('kalakshetra','facade')"
+                                                style="width:100px">Facade</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href="#" onclick=
+                                                "desc('kalakshetra','rangoli')"
+                                                style="width:100px">Rangoli</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href="#" onclick=
+                                                "desc('kalakshetra','graffiti')"
+                                                style=
+                                                "width:100px">Graffiti</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href="#" onclick=
+                                                "desc('kalakshetra','paperdressing')"
+                                                style="width:100px">Paper
+                                                Dressing</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href="#" onclick=
+                                                "desc('kalakshetra','bagdesign')"
+                                                style="width:100px">T-shirt
+                                                Design</a>
+                                                </li>
+                                                <!--    <li><a href="#" onclick="desc('kalakshetra','mapdesign')">Mag Design</a></li>
+-->
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href="#" onclick=
+                                                "desc('kalakshetra','potpainting')"
+                                                style="width:100px">Pot
+                                                Painting</a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <br>
+                                <br>
+                                <span>Contacts :<br>
+                                Shiv&nbsp;Raj&nbsp;&nbsp;&nbsp;
+                                shiv.raj@students.iiit.ac.in<br>
+                                Priya&nbsp;Bansal&nbsp;&nbsp;
+                                priya.bansal@students.iiit.ac.in<br>
+                                Chetna &nbsp;Gupta
+                                chetna@students.iiit.ac.in<br>
+                                Venessa&nbsp;Tauro&nbsp;&nbsp;
+                                venessaroshni.tauro@students.iiit.ac.in<br>
+                                Sindhu&nbsp;Kiranmai
+                                sindhukiranmai.ernala@students.iiit.ac.in<br></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ca-item ca-item-6">
+                    <div class="ca-item-main">
+                        <a class="ca-more-icon" href="#"></a>
+
+                        <div class="ca-icon">
+                        </div>
+
+
+                        <h3>Riders On The Storm</h3>
+                        <a href="http://www.sbhyd.com/" target=
+                        "_blank"><img height="50px" src=
+                        "../sponsors/img/sponsors/c_sbh.jpg" width=
+                        "100px"></a><br>
+                        <span>&middot;&middot; and here they come; riding the
+                        highs- to boil your bloods and shatter the
+                        skies.</span> <a class="ca-more" href="#">more...</a>
+                    </div>
+
+
+                    <div class="ca-content-wrapper">
+                        <div class="ca-content">
+                            <h6>Witness the epic thunders of passion</h6>
+                            <a class="ca-close" href="#">close</a>
+
+                            <div class="ca-content-text">
+                                <p>Bob Dylan, Jim Morrison, Jimi Hendrix, Led
+                                Zeppelin, Pink Floyd,AC/DC - which legend do
+                                you follow? Metal/Alternative/New age rock -
+                                what is it that has you screaming for more?
+                                Calling all ye metal-heads to congregate and
+                                witness the most electrifying competition in
+                                the city comprising power packed gigs with
+                                larynx-shredding vocals, mammoth power-chord
+                                roars and a lumbering arena inducing adrenalin
+                                rushes and encores. Be it grunge, heavy metal,
+                                psychedelic, alternative, punk, or indie rock,
+                                we'll have it all so be there and brace
+                                yourself for an unforgettable nite of rock.</p>
+                                <br>
+                                <br>
+                                <a href=
+                                "https://docs.google.com/forms/d/1aJf5Oq7ypF23BwosPfW6nxh3yEtNi2tGVwe9Viohu14/viewform"
+                                style="font-weight: bold" target="_blank">Click
+                                here to register for Riders On The Storm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ca-item ca-item-7">
+                    <div class="ca-item-main">
+                        <a class="ca-more-icon" href="#"></a>
+
+                        <div class="ca-icon">
+                        </div>
+
+
+                        <h3>Futsal</h3>
+                        <a href="http://www.spykar.com/" target=
+                        "_blank"><img height="50px" src=
+                        "../sponsors/img/sponsors/spykar.jpg" width=
+                        "100px"></a><br>
+                        <br>
+                        <span>"Some people think football is a matter of life
+                        and death, but I assure you it's much more serious than
+                        that." - Bill Shankly.</span> <a class="ca-more" href=
+                        "#">more...</a>
+                    </div>
+
+
+                    <div class="ca-content-wrapper">
+                        <div class="ca-content">
+                            <a class="ca-close" href="#">close</a>
+
+                            <div class="ca-content-text" id='ZombieZone'>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <h6>Futsal</h6>
+                                            Get ready for a footballing
+                                            experience like never before!
+                                            Four-a-side-football for the 5th
+                                            time in Hyderabad being organized
+                                            in Felicity 2014 by IIIT
+                                            Hyderabad.Are you ready to scorch
+                                            the turf with Ronaldo like
+                                            dribbling, Kaka like passing and
+                                            Vidic like tackling? Well, if you
+                                            are upto the challenge, so are we.
+                                            A number of new, innovative rules
+                                            will make sure the games are
+                                            tougher, more exciting,
+                                            entertaining and action
+                                            packed!!Pull up your socks and get
+                                            ready to show some intensity,
+                                            passion and commitment on the
+                                            field. Play only to win.<br>
+                                            <br>
+                                            <!--<a target="_blank" href="#" style="font-weight:bold" >Click Here</a> to Register for futsal-->
+                                             <a href=
+                                            "https://docs.google.com/forms/d/1kGw0y9v0A3_bWTGcvli9XstKJ8Wj1ZsN7BoOMEk4IHY/viewform"
+                                            style="font-weight: bold" target=
+                                            "_blank">Click here to register for
+                                            Futsal</a><br>
+                                            <br>
+                                            Contacts :<br>
+                                            Japneet
+                                            japneet.singh@students.iiit.ac.in<br>
+
+                                            Varun
+                                            varun.vashisht@students.iiit.ac.in
+                                            +91-8886794104<br>
+                                            Taradeesh
+                                            taradheesh.bali@students.iiit.ac.in
+                                            +91-9959558266<br>
+                                            <br>
+                                            <br>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ca-item ca-item-8">
+                    <div class="ca-item-main">
+                        <a class="ca-more-icon" href="#"></a>
+
+                        <div class="ca-icon">
+                        </div>
+
+
+                        <h3>Zombie Zone</h3>
+                        <a href="http://www.gigabyte.in/" target=
+                        "_blank"><img alt="GIGABYTE" height="50px" src=
+                        "../sponsors/img/sponsors/gigabyte.gif" width=
+                        "100px"></a><br>
+                        <br>
+                        <span>Calling All Gamers</span> <a class="ca-more"
+                        href="#">more...</a>
+                    </div>
+
+
+                    <div class="ca-content-wrapper">
+                        <div class="ca-content">
+                            <a class="ca-close" href="#">close</a>
+
+                            <div class="ca-content-text" id='ZombieZone'>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <h6>Zombie Zone</h6>
+
+
+                                            <ul style="font-size:20px">
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "https://docs.google.com/forms/d/1zGvvnHXGR9zZbGQebIiwO3QOnRdPk48bcYfPoC8OeMQ/viewform"
+                                                style="width:100px">FIFA</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "https://docs.google.com/forms/d/11YJ5IdVCjsEU7DjQW92HZGTg5Lsew8XvbI9c8xc4iio/viewform"
+                                                style="width:100px">AOE 3</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "https://docs.google.com/forms/d/1CbA31JX7Xd1WTH6YdrrAe_ZlJGxF2uHdZqtfjvejQUY/viewform"
+                                                style="width:100px">Counter
+                                                Strike</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "https://docs.google.com/forms/d/1KNK9ZWf9Wu05UFb_7Y7tdqhxBiey5sEyaSIrZXWfuIY/viewform"
+                                                style="width:100px">DotA</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "https://docs.google.com/forms/d/1JMNdZT7JsmDCJmfpDiapQHKH76pGv796Vz0YbqLqnkI/viewform"
+                                                style="width:100px">Need For
+                                                Speed</a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr>
+                                </table>
+
+
+                                <p><b>Click on game to register</b> <b>All the
+                                games will be played throughout the 3 days.<br>
+                                Prizes of upto Rs. 60000 to be won.<br>
+                                Cash prizes of Rs. 5000 for the winners of
+                                Counter Strike and DotA.</b><br>
+                                <b>Timings for Zombie Zone is from 10 a.m to 6
+                                p.m on all the 3 days.</b></p>
+                                <span>Contacts:<br>
+                                Vaibhav Gupta -
+                                vaibhav.gupta@students.iiit.ac.in
+                                +91-9963855636<br>
+                                Yaramaneni Ravi Teja -
+                                yaramaneniravi.teja@students.iiit.ac.in
+                                +91-8374003585<br>
+                                Darshit Singh Sarna -
+                                darshitsingh.sarna@students.iiit.ac.in
+                                +91-7306392926<br>
+                                Tejas Shah - tejas.shah@students.iiit.ac.in
+                                +918886142054 
+                                <!--    Dota - &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;NFS - <br/>
+                                FIFA -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AOE3 - <br/>
+                                Counter Strike - --></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ca-item ca-item-9">
+                    <div class="ca-item-main">
+                        <a class="ca-more-icon" href="#"></a>
+
+                        <div class="ca-icon">
+                        </div>
+
+
+                        <h3>Paper Presentation</h3>
+                        <a href="http://www.progress.com/" target=
+                        "_blank"><img alt="Progress Software" height="50px"
+                        src="../sponsors/img/sponsors/f_progress.jpg" width=
+                        "100px"></a><br>
+                        <span>Paper Presentation</span> <a class="ca-more"
+                        href="#">more...</a>
+                    </div>
+
+
+                    <div class="ca-content-wrapper">
+                        <div class="ca-content">
+                            <a class="ca-close" href="#">close</a>
+
+                            <div class="ca-content-text" id='ZombieZone'>
+                                <h6>Paper Presentation</h6>
+                                Felicity is not just about pomp and show
+                                &acirc;&euro;&ldquo; it is in fact a showcase
+                                of any talent that you might possess. While
+                                other events bring out your creative and
+                                smarter side, &acirc;&euro;&tilde;Paper
+                                presentation&acirc;&euro;&trade; will strike
+                                your scholarly nerves as many minds would meet
+                                together to present their ideas and
+                                advancements in technology. There are no bounds
+                                of the topics you choose to present. So if you
+                                think you have done something strikingly
+                                scholarly, come to Felicity and let the world
+                                know !!<br>
+                                <br>
+                                <a href=
+                                "http://felicity.iiit.ac.in/web2py/Portal/default/event_home?event_id=4&amp;tab_id=0"
+                                style="font-weight:bold" target="_blank">Click
+                                here to register for Paper Presentation</a><br>
+                                Contacts:<br>
+                                Sudhir :
+                                yarramsudhirkumar.reddy@students.iiit.ac.in
+                                +91-9704477319<br>
+                                Anurag : anuraag.a@students.iiit.ac.in
+                                +91-8886400885<br>
+                                Sindhu :
+                                sindhukiranmai.ernala@students.iiit.ac.in
+                                +91-9849925895<br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ca-item ca-item-11">
+                    <div class="ca-item-main">
+                        <a class="ca-more-icon" href="#"></a>
+
+                        <div class="ca-icon">
+                        </div>
+
+
+                        <h3>GHAC Events</h3>
+                        <a href="http://www.ghac.in/" target="_blank">HomePage 
+                        <!--img height="50px" width="100px"  src="../sponsors/img/sponsors/ghac.png" alt="GHAC"/--></a><br>
+
+                        <span>GHAC Events</span> <a class="ca-more" href=
+                        "#">more...</a>
+                    </div>
+
+
+                    <div class="ca-content-wrapper">
+                        <div class="ca-content">
+                            <a class="ca-close" href="#">close</a>
+
+                            <div class="ca-content-text" id='ZombieZone'>
+                                <h6>GHAC Events</h6>
+                                <br>
+                                Rappelling, Valley Crossing, Tarzan Swing and
+                                much more<br>
+                                <br>
+                                <br>
+                                <!--a href="http://felicity.iiit.ac.in/web2py/Portal/default/event_home?event_id=4&tab_id=0" target="_blank" style="font-weight:bold">Click here to register for Paper Presentation</a-->
+                                <br>
+                                All days from morning to evening<br>
+                                <br>
+                                Contacts:<br>
+                                Mohit Kharb : +919703840175<br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ca-item ca-item-12">
+                    <div class="ca-item-main">
+                        <a class="ca-more-icon" href="#"></a>
+
+                        <div class="ca-icon">
+                        </div>
+
+
+                        <h3>SkateBoarding Workshop</h3>
+                        <a href="http://www.quicksilver.in/" target=
+                        "_blank"><img alt="QuickSilver" height="50px" src=
+                        "../sponsors/img/sponsors/quicksilver.jpg" width=
+                        "100px"></a><br>
+                        <!--span>Skateboarding Workshop</span-->
+                         <a class="ca-more" href="#">more...</a>
+                    </div>
+
+
+                    <div class="ca-content-wrapper">
+                        <div class="ca-content">
+                            <a class="ca-close" href="#">close</a>
+
+                            <div class="ca-content-text" id='ZombieZone'>
+                                <h6>Skateboarding Workshop</h6>
+                                <br>
+                                Skateboarding Workshop in association with
+                                QuickSilver<br>
+                                <br>
+                                <br>
+                                <!--a href="http://felicity.iiit.ac.in/web2py/Portal/default/event_home?event_id=4&tab_id=0" target="_blank" style="font-weight:bold">Click here to register for Paper Presentation</a-->
+                                <br>
+                                All days from morning to evening<br>
+                                Venue: BasketBall Ground, IIIT-Hyderabad<br>
+                                <br>
+                                Contacts:<br>
+                                Mohit Kharb : +919703840175<br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="ca-item ca-item-10">
+                    <div class="ca-item-main">
+                        <a class="ca-more-icon" href="#"></a>
+
+                        <div class="ca-icon">
+                        </div>
+
+
+                        <h3>Talks &amp; Workshops</h3>
+                        <a href="http://indiancag.org/" target=
+                        "_blank"><img height="50px" src=
+                        "../sponsors/img/sponsors/cag.png" width=
+                        "100px"></a><br>
+                        <br>
+                        <span>Talks and workshops</span> <a class="ca-more"
+                        href="#">more...</a>
+                    </div>
+
+
+                    <div class="ca-content-wrapper">
+                        <div class="ca-content">
+                            <a class="ca-close" href="#">close</a>
+
+                            <div class="ca-content-text" id="talks">
+                                <table>
+                                    <tr>
+                                        <td>
+                                            <h6>Talks &amp; Workshops</h6>
+
+
+                                            <ul style="font-size:20px">
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "http://en.wikipedia.org/wiki/Pullela_Gopichand"
+                                                style="width:100px" target=
+                                                "_blank">Pullela Gopichand</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "http://www.isb.edu/faculty-research/faculty/directory/subramanian-krishnamurthy"
+                                                style="width:100px" target=
+                                                "_blank">Subramanian
+                                                Krishnamurthy</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href=
+                                                "http://milaap.org/about-us/team#anoj"
+                                                style="width:100px" target=
+                                                "_blank">Anoj Viswanathan</a>
+                                                </li>
+
+
+                                                <li style=
+                                                "padding-left:10px;padding-bottom:10px">
+                                                <a class=
+                                                "btn btn-large btn-primary"
+                                                href="http://drthchowdary.net/"
+                                                style="width:100px" target=
+                                                "_blank">Dr. T. Hanuman
+                                                Chowdary</a>
+                                                </li>
+                                                <!--    <li><a href="#" onclick="desc('talks','kulwinder')">Kulwinder Singh</a></li>
+                                        <li><a href="#" onclick="desc('talks','nikita')">Nikita Singh</a></li>
+-->
+                                            </ul>
+                                        </td>
+                                    </tr>
+
+
+                                    <tr>
+                                        <td>Details:<br>
+                                        <br>
+                                        22nd Feb: 10:00 am Subramanian
+                                        Krishnamurthy<br>
+                                        22nd Feb: 11:30 am Anoj Viswanathan<br>
+                                        23rd Feb: 10:00 am Dr. T. Hanuman
+                                        Chowdhary<br>
+                                        23rd Feb: 11:00 am Pullela
+                                        Gopichand<br></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    $('#ca-container').contentcarousel();
+    </script><!-- Google Analytics -->
+    <script src="/static/js/google/analytics.js" type="text/javascript">
+    </script>
+</body>
+</html>

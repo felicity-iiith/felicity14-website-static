@@ -1,0 +1,15 @@
+@font-face{
+	font-family: 'Open Sans',arial;
+}
+body{
+	font-family: 'Open Sans',arial;
+	font-size:22px;
+	background:rgba(16,16,16,0.9);
+	line-height:36px;
+}
+p.abc{
+	color:#AEBB51;
+}
+p{
+	color:#DEE4B9;
+}
