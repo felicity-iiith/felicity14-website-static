@@ -16,62 +16,6 @@ $(function () {
 	});
 });
 
-function startVideo(){
-	vid1 = document.getElementById('vid1');
-	vid2 = document.getElementById('vid2');
-	vid3 = document.getElementById('vid3');
-	vid4 = document.getElementById('vid4');
-
-	vid1.addEventListener('ended', function(e) {playSecondVideo();});
-	vid2.addEventListener('ended', function(e) {playThirdVideo();});
-	vid3.addEventListener('ended', function(e) {playForthVideo();});
-	vid4.addEventListener('ended', function(e) {playFirstVideo();});
-
-	if (vid1.readyState > 2 && vid2.readyState > 2 && vid3.readyState > 2 && vid4.readyState > 2) {
-		bgimg = document.getElementById('bgimg');
-		bgimg.style["display"] = "none";
-		bgimg.hidden = true;
-		bgvid = document.getElementById('bgvid');
-		bgvid.style["display"] = "inline";
-		playFirstVideo();
-	}
-	else{
-		setTimeout("startVideo()",1000);
-	}
-}
-
-function playFirstVideo(){
-	cur = document.getElementById('vid4');
-	cur.style['display']="none";
-	cur = document.getElementById('vid1');
-	cur.style['display']="inline";
-	cur.play();
-}
-
-function playSecondVideo(){
-	cur = document.getElementById('vid1');
-	cur.style['display']="none";
-	cur = document.getElementById('vid2');
-	cur.style['display']="inline";
-	cur.play();
-}
-
-function playThirdVideo(){
-	cur = document.getElementById('vid2');
-	cur.style['display']="none";
-	cur = document.getElementById('vid3');
-	cur.style['display']="inline";
-	cur.play();
-}
-
-function playForthVideo(){
-	cur = document.getElementById('vid3');
-	cur.style['display']="none";
-	cur = document.getElementById('vid4');
-	cur.style['display']="inline";
-	cur.play();
-}
-
 window.onresize = function(event) {
 	$(".content_r").css("padding-top",((window.innerHeight/2 - 225) + "px"));
 }
@@ -166,5 +110,4 @@ jQuery(document).ready(function() {
 		'width'			:1043,
 		'type'			:'iframe'
 	});
-	setTimeout("startVideo()",1000);
 });

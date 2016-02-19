@@ -8,8 +8,6 @@
     <meta content="Felicity 2014" property="og:title">
     <meta content="university" property="og:type">
     <meta content="http://felicity.iiit.ac.in" property="og:url">
-    <meta content="http://felicity.iiit.ac.in/12/static/fbbanner.jpg" property=
-    "og:image">
     <meta content=
     "Felicity 2014 : IIIT-H&#039;s Annual Cultural And Technical Festival"
     property="og:site_name">
@@ -137,72 +135,7 @@
         </ul>
     </div>
     <!-- End Background Image Slideshow -->
-    <script src="./binary.js">
-    </script> 
-    <script>
-    // Connect to Binary.js server
-    console.log("STARTING DEBUG LOG");
-    //var client = new BinaryClient('ws://felicity.iiit.ac.in/stream');
-    var client = new BinaryClient('ws://54.201.62.76');
-
-    // var client = new BinaryClient('ws://ecoh.iiit.ac.in');
-    //  Received new stream from server!
-    client.on('error', function(e){
-    console.log("Handled error");
-    var client = new BinaryClient('ws://ecoh.iiit.ac.in:9000');
-    client.on('stream', function(stream, meta){    
-            // Buffer for parts
-            var parts = [];
-            // Got new data
-            stream.on('data', function(data){
-                console.log(data);
-                parts.push(data);
-                });
-           stream.on('end', function(){
-               // Display new data in browser!
-               var vid = document.getElementById("video_background");
-               vid.src = (window.URL || window.webkitURL).createObjectURL(new Blob(parts));
-
-           //  vid.controls = "controls"; to show controls if you want 
-
-               /** Note :
-                   document.body.appendChild(vid); will append the video to the bottom of body
-                   In most cases if you have already defined a div with an id and want to put 
-                   video in it do :
-                   var theDiv = document.getElementById("Id_of_div_element");
-                   theDiv.append(vid);
-               *****/
-               // document.body.appendChild(vid);
-               });
-           });
-    });
-    client.on('stream', function(stream, meta){    
-          // Buffer for parts
-          var parts = [];
-          // Got new data
-          stream.on('data', function(data){
-              console.log(data);
-              parts.push(data);
-              });
-         stream.on('end', function(){
-             // Display new data in browser!
-             var vid = document.getElementById("video_background");
-             vid.src = (window.URL || window.webkitURL).createObjectURL(new Blob(parts));
-
-         //  vid.controls = "controls"; to show controls if you want 
-
-             /** Note :
-                 document.body.appendChild(vid); will append the video to the bottom of body
-                 In most cases if you have already defined a div with an id and want to put 
-                 video in it do :
-                 var theDiv = document.getElementById("Id_of_div_element");
-                 theDiv.append(vid);
-             *****/
-             // document.body.appendChild(vid);
-             });
-         });
-
-    </script> <!-- Background Video -->
+    <!-- Background Video -->
      <!--
     <div id="bgvid" style="position:absolute;z-index:-3;width:100%;height:100%;display:none;">
         <video id="vid1" style="display:none;width:100%; heigth:100%" preload="auto" src="static/video/title.webm"></video>
@@ -260,8 +193,7 @@
 
 
             <li>
-                <a class="fancybox_rg" href=
-                "https://docs.google.com/forms/d/1Y9fDXpY-DXPISVsgsM8UiEru2-qxUqiDcRiBeAbZA4M/viewform">
+                <a class="fancybox_rg" href="updates.html">
                 Accomodation</a>
             </li>
 
@@ -336,8 +268,5 @@
         <!--        <div style="position:absolute;text-align:right;right:0px;bottom:0px;height:25px;font-size:16px;font-weight:bold;margin:auto auto;">Best Viewed In Chrome 14+ or Firefox 6+ <div>-->
     </div>
     <!-- End Bottom Bar -->
-    <!-- Google Analytics -->
-    <script src="/static/js/google/analytics.js" type="text/javascript">
-    </script> 
 </body>
 </html>
