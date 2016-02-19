@@ -1,0 +1,46 @@
+#console-wrapper, #console {
+    height: 100%;
+}
+
+.landing {
+}
+
+#console-wrapper, #console {
+   background-color: black;
+   z-index: 20;
+}
+
+#console-inner {
+    outline: none;
+    border: 0;
+    resize: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    background-color: inherit;
+    color: #057cb8;
+    font-size: 18px;
+    font-family: monospace;
+}
+
+.hidden-text {
+    display: none;
+}
+
+.vtextarea {
+    font-size: 0.8em;
+    line-height: 1.3em;
+}
+
+#console-inner div,
+#console-inner span {
+    display: none;
+}
+
+.content-wrapper {
+    padding: 1em;
+}
+.landing {
+    display: none;
+}
