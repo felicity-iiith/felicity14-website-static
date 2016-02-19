@@ -28,7 +28,7 @@
 				<ul>
 				   
 					<li>
-						<a href="images/5 Ultimate Pulse.jpg">About Us</a>
+						<a href="#" data="images/5 Ultimate Pulse.jpg">About Us</a>
 						
 						<div class="ac_subitem" >
 							<ul><li><a href="./" id="nostalgia-navigation-close-button"></a></li>
@@ -55,7 +55,7 @@ It is not in the still calm of life, or the repose of a pacific station, that gr
 						</div>
       				</li>
 					<li>
-						<a href="images/Register.jpg">Events</a>
+						<a href="#" data="images/Register.jpg">Events</a>
 						<div class="ac_subitem">
 							<ul><li><a href="./" id="nostalgia-navigation-close-button"></a></li>
 							<span class="ac_close"></span>
@@ -78,7 +78,7 @@ It is not in the still calm of life, or the repose of a pacific station, that gr
 											</div>
 					</li>
 					<li>
-						<a href="images/Contact.jpg">Contact Us</a>
+						<a href="#" data="images/Contact.jpg">Contact Us</a>
 						<div class="ac_subitem">
 							<ul><li><a href="./" id="nostalgia-navigation-close-button"></a></li>
 							<span class="ac_close"></span>
@@ -150,7 +150,7 @@ It is not in the still calm of life, or the repose of a pacific station, that gr
 				including the bg image
 				*/
 				$menuItems.each(function(i) {
-					$ItemImages.push($(this).children('a:first').attr('href'));
+					$ItemImages.push($(this).children('a:first').attr('data'));
 				});
 				$ItemImages.push($ac_bgimage.attr('src'));
 					  
@@ -270,7 +270,7 @@ It is not in the still calm of life, or the repose of a pacific station, that gr
 						$menuItems.each(function(i) {
 							var $item		= $(this), // the <li>
 							$el_title	= $item.children('a:first'),
-							el_image	= $el_title.attr('href'),
+							el_image	= $el_title.attr('data'),
 							$sub_menu	= $item.find('.ac_subitem'),
 							$ac_close	= $sub_menu.find('.ac_close');
 							8
