@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>Mystr-E | Pulsation</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/base.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet'
+    type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Della+Respira' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Nixie+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    if (!window.jQuery) {
+        document.write('<script src="js/jquery.min.js"><\/script>');
+      }
+  </script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $('.img-container img').height($('.img-container img').width());       
+       $(window).resize(function() {
+        $('.img-container img').height($('.img-container img').width());       
+
+           });
+    });
+  </script>
+  <script src="js/jquery.color.js" type="text/javascript"></script>
+  <link href="css/toast.css" rel="stylesheet">
+  <style type="text/css">
+    html, body {
+        height: auto;
+    }
+    .content-wrapper {
+        margin-top: 2em;
+    }
+    .grid {
+        color: #fff;
+        font-size: 1.3em;
+        line-height: 1.4em;
+        font-family: 'Rokkitt', serif;
+    }
+    .unit {
+        margin-bottom: 25px;
+    }
+    .unit.single {
+        padding: 2%;
+        background-color: #333;
+        background-color: rgba(20,20,20,0.8);
+    }
+    .unit-part {
+        margin-bottom: 2%;
+        padding: 5%;
+        background-color: rgba(20,20,20,0.8);
+    }
+    
+    #time-wrapper {
+        background-color: rgba(8,80,110,0.8);
+        text-align: center;
+    }
+    .unit-part.img-container {
+        padding: 0;
+        
+    }
+    .unit-part.img-container img {
+        width: 100%;
+    }
+    h2, h3 {
+        font-family: 'Nixie One', serif;
+    }
+    
+    h3 {
+        font-size: 1em;
+        line-height: 1.4em;
+    }
+    h2 {
+        font-size: 2.3em;
+        font-weight: 500;
+    }
+    h2#fold-rule {
+        margin: 0;
+        line-height: 1;
+        display: inline-block;
+    }
+    #fold-rule {
+    }
+    #fold-arrow {
+        float: right;
+        margin: 0;
+        line-height: 1;
+        font-family: sans-serif;
+        font-weight: light;
+    }
+    #fold-clicker {
+       cursor: pointer;
+    } 
+    #fold-arrow img {
+        height: 50px;
+        width: 50px;
+    }
+    #rules {
+        display: none;
+      
+  }
+    #rules ol {
+        padding: 10px 0 5px 0;
+    } 
+    .unit.right p {
+        text-align: justify;
+        font-size: 0.8em;
+    }
+
+    
+    #title-wrapper {
+        background-color: rgba(8,80,110,0.8);
+        text-align: center;
+        font-family: 'Nixie One', serif;
+        font-size: 2.3em;
+    }
+    hr {
+  margin: 0.5em 0;
+  background-color: #666;
+    }  
+
+   #contact-details h3 {
+    margin-bottom: 0.5em;
+   }
+   #event-content {
+    /*
+    font-size: 1.2em;
+    */
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 1%;
+   }
+    .content-wrapper {
+        margin-top: 0;
+    }
+    .content {
+        margin-top: 2em;
+    }
+    .footer-wrapper {
+        position: static;
+        height: auto;
+        width: auto;
+    }
+    body, html {
+        height: 100%;
+    }
+    .content-wrapper {
+        min-height: 100%;
+    }
+    .links a {
+        font-family: 'Electrolize', sans-serif;
+    }
+  </style>
+  <link href="http://fonts.googleapis.com/css?family=Electrolize" rel="stylesheet" type="text/css">
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $('#fold-clicker').click(function() {
+           $('#rules').stop().slideToggle(); 
+            if($('#fold-arrow img').attr('src') == 'down-arrow.png')
+                $('#fold-arrow img').attr('src','images/up-arrow.png');
+            else
+                $('#fold-arrow img').attr('src', 'images/down-arrow.png');
+           });
+    });
+  </script>
+</head>
+<body>
+
+    <div class="content-wrapper">
+          <div class="masthead dark">
+        <span class="logo"><a href="index.html"><img src="images/logo123.png" alt="Felicity Logo"></a></span>
+        <span class="links">
+          <a href="index.html">Home</a>
+	  <a href="contact.html">Contact Us</a>
+
+        </span>
+<div class="loginbox out">
+</div>
+</div>
+        <div class="content">
+            <div class="container">
+            <div class="grid">
+                <div class="unit parted left one-of-two smaller">
+                    <div class="unit-part img-container">
+                      <img src="images/2 MystrE.jpg">
+                    </div>
+                    <div class="unit-part" id="time-wrapper">
+                      <h3>February 14, 2014</h3>
+                    </div>
+                    <div class="unit-part" id="contact-details">
+                      <h3>Contact Us:</h3>
+
+                      <h4>nikhil.bhandari@students.iiit.ac.in
+somanshu.agarwal@students.iiit.ac.in</h4>
+                    </div>
+                  </div>
+                <div class="unit parted right one-of-two larger">
+        <div class="unit-part" id="title-wrapper">
+            Mystr-E        </div>
+        <div class="unit-part" id="event-content">
+            <p>
+Solve a mystery of Electronics from your own hot seat.
+<br>
+Showcase your knowledge in the arena of Electronics, which has various components, theories and includes the working of innumerable devices. This is an online event where you get to challenge your instincts, and most of all, your quick impulses, through a test in the various fields of electronics and communication.
+<br>
+So buckle up and get your spy glasses ready for this challenge.
+<br>
+The contest itself is very simple: you read the problems, solve them and submit. Doing it better than anyone else, that is the real feat.
+</p>
+<p>
+<a href = ''><button id ='referer'>Prizes worth 7K to be won</button></a>
+</p>
+        </div>
+                </div>
+                <div class="unit single span-grid rules-section">
+                    <div id="fold-clicker">
+                    <h2 id="fold-rule">Rules</h2>
+                    <h2 class="down-arrow" id="fold-arrow"><a href="javascript:void(0)"><img alt="Down arrow" src="images/down-arrow.png"></a></h2>
+                       <hr>
+                    </div>
+                        <div id="rules">
+                        <ol>
+<li>Contest will be 27 hours long.</li>
+<li>This is an individual event.</li>
+<li>Each problem requires electronic skills in basic digital, analog and computer architecture fields to arrive at the answer to a particular problem.</li>
+<li>The competition is divided in levels and each level consists of set of 5 questions. A participant must answer at least 4 questions from each level to advance to the higher level.</li>
+<li>There has to be a gap of at least 30 secs between two consecutive submissions for the same problem.</li>
+<li>Scoring will be done by No. of questions.More the questions solved, higher the score.</li>
+<li>Tie-breaking between two participants with same number of questions solved will be according to level achieved and number of question done in that level</li>
+<li>Answer may be positive or negative, decimal or integer number or alphanumeric characters.</li>
+<li>For any doubt/queries, you can post comments, which will be moderated.</li>
+<li>Hints, if any, for a particular question will be released through the comments by the Admins upon request.</li>
+<li>If you are having any difficulty, you can reach us at pulsation@felicity.iiit.ac.in.</li>
+<li>Top few participants will be invited onsite directly into the second round of the event Ultimate Pulse </li>
+</ol> 
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+          <div class="footer-wrapper">
+        <div class="footer">
+          <p style="float:left">Find us on <a href="https://www.facebook.com/felicity.iiith">Facebook</a> and <a href="https://plus.google.com/u/0/b/112378197115881832357/">Google+</a>.</p>
+          <span style="color:white;display:inline-block;float:right;">
+          Presented by
+          <a href='http://felicity.iiit.ac.in'><img alt="Felicity Logo" src="images/feli-logo.png">
+          <strong> Felicity '14</strong></a>, IIIT Hyderabad
+          </span>
+        <div style="clear:both"></div>
+          </div>
+      </div>
+</body>
+</html>
+
